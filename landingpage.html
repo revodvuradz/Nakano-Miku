@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Struktur HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Prata&family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <navbar>
+            <a href="landingpage.html">
+                <img src="miku2.png" alt="pala miku">
+            </a>
+            <ul class="nav-links">
+                <li><a href="landingpage.html">Home</a></li>
+                <li class="center"><a href="#profile">Profile</a></li>
+                <li class="forward"><a href="#">Feedback</a></li>
+                <li class="upward"><a href="#aboutme">About Me</a></li>
+            </ul>
+        </navbar>
+    </header>
+
+    <main>
+        <h3>Nakano Miku</h3>
+        <section class="carousel-box">
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="miku10.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="miku4.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="miku8.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="miku6.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="miku9.jpg"></a>
+            </div>
+        </section>
+
+        <article>
+            <div class="article-item">
+                <h4>Story</h4>
+                <p>High-school student Futaro Uesugi is an academically gifted student that leads a difficult life—his mother has died, he has no friends, and on top of all that, his father has incurred a large amount of debt.
+
+                    An opportunity presents itself when the rich Nakano family transfers to his school. Futaro is promptly hired as a highly paid tutor. However, much to Futaro's dismay, he discovers that his five charges—identical quintuplet sisters of varied personalities—have no interest in studying at all and have abysmal grades. Some of the quintuplets are against having Futaro, whom they view as a stranger, in their apartment, but Futaro's diligent tenacity gradually convinces those girls to accept him and to improve their grades.
+                    
+                    Throughout the series, Futaro develops special relationships with each of the quintuplets. Through a flashforward, it is revealed that he eventually marries one of them, but her true identity is only revealed near the end of the series. Thus Futaro and the quintuplets happy relationship will continue on forever.</p>
+            </div>
+        </article>
+        <h4>Profile</h4>
+        <div class="profile" id="profile">   
+            <article>
+                <div class="aside-item">
+                    
+                    <ul id="profile-list"> 
+                    </ul>
+                </div>
+            </article>
+            <aside class="profile-aside">
+                <img src="miku12.png" alt="Gambar Profil" class="profile-image">
+            </aside>
+        </div> 
+
+        
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="about" id="aboutme">
+                <h4>About Me</h4>
+                <div class="social-media">
+                    <a href="https://github.com/revodvuradz" class="btn github">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://discord.com/users/700538070847455284" class="btn discord">
+                        <i class="fab fa-discord"></i>
+                      </a>
+                      <a href="ahafizh011@gmail.com" class="btn google">
+                        <i class="fab fa-google"></i>
+                      </a>
+                      <a href="https://steamcommunity.com/profiles/76561198398306077/" class="btn steam">
+                        <i class="fab fa-steam"></i>
+                      </a>
+                      <a href="https://www.instagram.com/revo_d_vuradz/" class="btn isntagram">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                </div>              
+            </div>
+            <div class="footer-menu">
+                <ul class="menu">
+                    <li class="menu-item"><a  href="landingpage.html">Home</a></li>
+                    <li class="menu-item"><a  href="#profile">Profile</a></li>
+                    <li class="menu-item"><a  href="#">Feedback</a></li>
+                    <li class="menu-item"><a  href="#aboutme">About Me</a></li>
+                </ul>
+                <p>&copy;2024 <strong>Revodvuradz</strong>  | All Rights Reserved</p>
+        </div>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {});
+        });
+    </script>
+</body>
+</html>
